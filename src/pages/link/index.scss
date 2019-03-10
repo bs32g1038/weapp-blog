@@ -1,0 +1,46 @@
+.home {
+    margin-bottom: 50rpx;
+}
+
+.scrollview {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99000;
+    height: calc(100% - 100.5rpx);
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.link-item {
+    padding: 20rpx;
+    border-bottom: .5px solid #e5e5e5;
+    &:last-child {
+        border-bottom: none
+    }
+    .header {
+        display: flex;
+        flex: 1 0 auto;
+        align-items: center;
+    }
+    .logo {
+        width: 50rpx;
+        height: 50rpx;
+        border-radius: 50%;
+    }
+    .name {
+        font-size: 28rpx;
+        margin-left: 16rpx;
+    }
+    .description {
+        font-size: 32rpx;
+        margin-top: 20rpx;
+        margin-bottom: 20rpx;
+        display: block;
+    }
+    .url {
+        font-size: 28rpx;
+        color: #666
+    }
+}
