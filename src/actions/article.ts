@@ -1,25 +1,25 @@
 import {
-    FETCH_ARTICLES
+    FETCH_ARTICLE
 } from '../constants/app'
 import Taro from '@tarojs/taro'
 
-export const setArticles = (articles) => {
+export const setArticle = (article) => {
     return {
-        type: FETCH_ARTICLES,
-        articles
+        type: FETCH_ARTICLE,
+        article
     }
 }
 
 // 异步的action
-export function fetchArticles(page = 1) {
+export function fetchArticle(id) {
     return dispatch => {
         return Taro.request({
-            url: 'https://www.lizc.me/api/articles?page=' + page,
+            url: 'https://www.lizc.me/api/articles/' + id + '?fields=-summary&category.name&md=true',
             header: {
                 'content-type': 'application/json'
             }
         }).then(res => {
-            return dispatch(setArticles(res.data))
+            return dispatch(setArticle(res.data))
         })
     }
 }

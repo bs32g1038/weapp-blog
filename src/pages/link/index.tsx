@@ -2,7 +2,6 @@ import { ComponentClass } from 'react'
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Image, Text, ScrollView } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
-import { parseTime } from '../../utils/time';
 import { fetchLinks } from '../../actions/link'
 import TabBar from '../../components/tabbar';
 

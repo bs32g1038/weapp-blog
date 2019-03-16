@@ -31,6 +31,7 @@ class App extends Component {
             'pages/guestbook/index',
             'pages/link/index',
             'pages/about/index',
+            'pages/article/index',
         ],
         window: {
             backgroundTextStyle: 'light',
@@ -61,7 +62,8 @@ class App extends Component {
     }
 
     componentDidMount() {
-        Taro.hideTabBar()
+        console.log('ssssssss')
+        Taro.hideTabBar();
     }
 
     componentDidShow() { }

@@ -1,0 +1,41 @@
+.article {
+    width: 100%;
+}
+
+.title {
+    font-size: 40rpx;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+}
+
+.meta {
+    font-size: 28rpx;
+    color: #999;
+    text-align: center;
+    display: block;
+    margin-top: 20rpx;
+}
+
+.meta-item {
+    margin: 0 5px;
+}
+
+.content-wrap {
+    padding: 20rpx 24rpx 0;
+}
+
+.content {
+    word-break: break-all;
+    color: #444;
+    font-size: 14px;
+}
+
+.end {
+    font-size: 30rpx;
+    padding: 0 20rpx 40rpx;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
