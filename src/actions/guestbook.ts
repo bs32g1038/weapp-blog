@@ -15,10 +15,6 @@ export function fetchGuestbooks() {
     return dispatch => {
         return Taro.request({
             url: 'https://www.lizc.me/api/guestbooks',
-            data: {
-                foo: 'foo',
-                bar: 10
-            },
             header: {
                 'content-type': 'application/json'
             }

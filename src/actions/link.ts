@@ -15,10 +15,6 @@ export function fetchLinks() {
     return dispatch => {
         return Taro.request({
             url: 'https://www.lizc.me/api/links',
-            data: {
-                foo: 'foo',
-                bar: 10
-            },
             header: {
                 'content-type': 'application/json'
             }

@@ -2,10 +2,10 @@ import { combineReducers } from 'redux'
 import articles from './articles'
 import guestbooks from './guestbook'
 import links from './link'
-import counter from './counter'
+import article from './article'
 
 export default combineReducers({
-  counter,
+  article,
   guestbooks,
   articles,
   links

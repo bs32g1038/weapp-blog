@@ -1,4 +1,3 @@
-import { ComponentClass } from 'react'
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Image, Text, ScrollView } from '@tarojs/components'
 import TabBar from '../../components/tabbar';
@@ -6,27 +5,7 @@ import avatarPng from './avatar.png';
 
 import './index.scss'
 
-type PageStateProps = {
-    guestbooks: {
-        guestbooks: any[]
-    }
-}
-
-type PageDispatchProps = {
-    fetchGuestbooks: () => any
-}
-
-type PageOwnProps = {}
-
-type PageState = {}
-
-type IProps = PageStateProps & PageDispatchProps & PageOwnProps
-
-interface Guestbooks {
-    props: IProps;
-}
-
-class Guestbooks extends Component {
+class About extends Component {
 
     config: Config = {
         navigationBarTitleText: '李志成的个人网站-关于'
@@ -79,4 +58,4 @@ class Guestbooks extends Component {
     }
 }
 
-export default Guestbooks as ComponentClass<PageOwnProps, PageState>
+export default About
